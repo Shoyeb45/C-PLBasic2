@@ -1,5 +1,6 @@
 #include<stdio.h>
 int max(int ,int);
+int min(int,int);
 void main()
 {
     int a,b,c,d,e;
@@ -8,7 +9,7 @@ void main()
     
     int Max = max(e,max(d,(max(c,max(a,b))))) ;
     int Min = min(e,min(d,(min(c,min(a,b))))) ;
-    printf("Maximu value is %d and minimum is %d",Max,Min);
+    printf("Maximum value is %d and minimum is %d",Max,Min);
     //one way is to write the conditionals statements for each . now using function
     
 }
