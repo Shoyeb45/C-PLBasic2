@@ -1,6 +1,7 @@
 //1.function with with argument and wit return type.
 
 #include<stdio.h>
+
 int add(int,int);
 
 void main()
