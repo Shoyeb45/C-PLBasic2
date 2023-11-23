@@ -1,19 +1,18 @@
 #include<stdio.h>
 
-int function(int);
+float function(float);
 
 void main()
 {
-    int x;
+    float x;
     printf("f(x)=10x+10\n");
-    printf("Enter value of x to get the f(x) at that point.");
-    scanf("%d", & x);
+    printf("Enter value of x to get the f(x) at that point.:\n");
+    scanf(" %f", & x);
 
-    int c=function(x);
-    printf("f(%d)=%d",x,c);
+    printf("f(%f)=%f",x,function(x));
 
 }
 
-int function(int a){
+float function(float a){
     return 10*a+10;
 }
