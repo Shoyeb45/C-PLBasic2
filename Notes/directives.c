@@ -3,7 +3,7 @@
 
 void main()
 { int a;
-    #ifndef NOSCAN
+    #ifdef NOSCAN
     a=6;
     #else
     a=10;
