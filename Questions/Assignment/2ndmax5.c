@@ -1,7 +1,6 @@
 #include<stdio.h>
 
 int max(int,int);
-int min(int,int);
 
 void main()
 {
@@ -10,12 +9,14 @@ void main()
     printf("Enter four numbers:\n");
     scanf("%d%d%d%d",&a,&b,&c,&d);
 
+    int m= max(a,b);
+    int n= max(b,c);
+    int s= max(c,d);
 
-
-    if(max(a,b)> max(c,d))
-    printf("%d", max(c,d));
+    if(max(m,n)> max(n,s))
+    printf("%d", max(n,s));
     else
-    printf("%d",max(a,b));
+    printf("%d",max(m,n));
 }
 
 int max(int a,int b){
