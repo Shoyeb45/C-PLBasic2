@@ -10,12 +10,12 @@ void main()
     printf("Enter four numbers:\n");
     scanf("%d%d%d%d",&a,&b,&c,&d);
 
-    int m = max(c,max(a,b));
 
-    if(m>d)
-    printf("%d",d);
+
+    if(max(a,b)> max(c,d))
+    printf("%d", max(c,d));
     else
-    printf("%d",m);
+    printf("%d",max(a,b));
 }
 
 int max(int a,int b){
