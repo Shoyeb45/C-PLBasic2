@@ -10,7 +10,7 @@ void main()
     int Max = max(d,(max(c,max(a,b))));
     int Min = min(d,(min(c,min(a,b)))) ;
     printf("Maximum value is %d and minimum is %d",Max,Min);
-    //one way is to write the conditionals statements for each . now using function
+
     
 }
 
