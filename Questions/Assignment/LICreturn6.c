@@ -1,24 +1,21 @@
 #include<stdio.h>
-double expo(double number,double power){
-    double extra=1;
-    for(int i=1 ; i<=power ; i++){
-            extra*=number;
-    }
-    return extra;
+double sip(double inve,double dura,double i){
+    return inve*((((1+i)*(dura))-1)/i)*(1+i);
 }
 
 void main()
 {
-    int deposit = 5000 ,t = 5;
+    int deposit = 5000 ,duration = 12*5;
     double deducePerc = 12;
-    double r = 8.5/100; //We have to convert it into decimal to put in formula.
+    double rate = 8.5;
+    double CIrate = rate/100*rate; 
 
-   double amt = deposit*expo(1+r,t);
+   double ReturnAmt = sip(deposit,duration,0.01);
    printf("Amout after 5 years:");
-   printf("%lf", amt); 
+   printf("%lf", ReturnAmt); 
 
    printf("\nSince company is deducing 12 percent of total amount at the end of five years.");
-   printf("\nFinal return:%lf",amt-(deducePerc*amt)/100);
+   printf("\nFinal return:%lf",((ReturnAmt)-(deducePerc/100)*(ReturnAmt-deposit)));
    
     
 
