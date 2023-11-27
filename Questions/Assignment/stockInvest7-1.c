@@ -10,7 +10,7 @@ double expo(double number,double power){
 void main()
 {
     int inveTCS = 10000 ,inveInfosys = 5000;
-    double TCSPerc = 0.06 , InfosysPerc = 0.05;
+    double TCSPerc = 0.06*12 , InfosysPerc = 0.05*12;
 //We have to convert it into decimal to put in formula.
 //using compound interest formula
     int n=12;//As monthly return
@@ -19,7 +19,7 @@ void main()
 
     double amtInfosys = inveInfosys*expo(1+r_2 , n); 
 
-printf("Principal amount after 1 yr:\nTCS:%lf\nInfosys:%lf:",amtTCS,amtInfosys); 
+printf("Total amount after 1 yr(P+I):\nTCS:%lf\nInfosys:%lf:",amtTCS,amtInfosys); 
 
 printf("\n\nBenefit on \nTCS:%lf and on\nInfosys:%lf",amtTCS-inveTCS,amtInfosys-inveInfosys);
     
