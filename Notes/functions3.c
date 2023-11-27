@@ -1,20 +1,15 @@
-#include <stdio.h>
-void test(int);
+#include<stdio.h>
+
 void main()
 {
-    int n;
-    printf("enter value of n\n");
-    scanf("%d",&n);
-    for(int i=1;i<=n;i++)
-    {
-        test(i);
+    int n=9;
+    int m=n;
+    for(int i=1;i<1+m;i++){
+        printf("%d ",i);
+        printf("%d \n",n);
+        n-=1;
+        
+        
+        
     }
-    
-}
-
-void test(int a)
-{
-    printf("\n***********\nScanned value is:\n");
-    scanf("%d",&a); 
-    printf("value after scan %d",a);
 }
