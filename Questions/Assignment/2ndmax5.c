@@ -15,12 +15,10 @@ void main()
 
    if( b > secondLar && b < Max )
    secondLar =  b;
-   else if(c > secondLar && c < Max)
+   if(c > secondLar && c < Max)
    secondLar = c;
-   else if(d > secondLar && d < Max)
+   if(d > secondLar && d < Max)
    secondLar = d;
-   else
-   printf("Second largest number is %d", secondLar);
 
 printf("Second largest number is %d", secondLar);
 
