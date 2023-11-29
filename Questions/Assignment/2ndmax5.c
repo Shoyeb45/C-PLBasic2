@@ -9,14 +9,22 @@ void main()
     printf("Enter four numbers:\n");
     scanf("%d%d%d%d",&a,&b,&c,&d);
 
-    int m= max(a,b);
-    int n= max(b,c);
-    int s= max(c,d);
+   int Max = max(d,max(c,max(a,b)));
 
-    if(max(m,n)> max(n,s))
-    printf("%d", max(n,s));
-    else
-    printf("%d",max(m,n));
+   int secondLar = a;
+
+   if( b > secondLar && b < Max )
+   secondLar =  b;
+   else if(c > secondLar && c < Max)
+   secondLar = c;
+   else if(d > secondLar && d < Max)
+   secondLar = d;
+   else
+   printf("Second largest number is %d", secondLar);
+
+printf("Second largest number is %d", secondLar);
+
+  
 }
 
 int max(int a,int b){

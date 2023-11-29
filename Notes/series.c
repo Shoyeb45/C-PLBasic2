@@ -2,8 +2,10 @@
 
 int sum(int n){
     if( n==1){
+        printf("%d ", n);
         return n;
     }else{
+        printf("%d ", n);
         return n + sum(n-1);
     }
 }
@@ -16,5 +18,5 @@ void main()
 
     s =sum(num);
 
-    printf("%d", s);
+    printf("\n%d", s);
 }
