@@ -1,14 +1,17 @@
 #include<stdio.h>
-
-void main()
-{
-    int weightSum=0;
-    int sumProfit=0;
-    printf("\t***Table***");
+void Table(){
+   printf("\t***Table***");
     printf("\nItem      Weight      Profit\n");
     printf("\nItem1      3kgs      12Rs");
     printf("\nItem2      4kgs      16Rs");
     printf("\nItem3      5kgs      20Rs\n");
+}
+void main()
+{
+    int weightSum=0 , choose1 , choose2;
+    int sumProfit=0;
+    Table();
+    
  int IW[3]={3,4,5};
  int IP[3]={12,16,20};    
 printf("\nWe can't take 6 items all two at once. \nBecause,\n2*Weight of Item1(%d) + 2*Weight of Item2(%d) + 2*Weight of Item3(%d)=%d > 20",IW[0],IW[1],IW[2],2*(IW[0]+IW[1]+IW[2]));
@@ -39,7 +42,14 @@ printf("\nWe can't take 6 items all two at once. \nBecause,\n2*Weight of Item1(%
     if(weightSum<=20 && i!=j){
     sumProfit=IP[0]+IP[1]+IP[2]+IP[i]+IP[j];
     printf("\nSum of profits: Item1 + Item2 + Item3 + Item%d + Item%d = %d (Weight sum=%d)", i+1 , j+1,sumProfit,weightSum);
+
+   if(sumProfit==80){
+      choose1 =i+1 , choose2=j+1;
+   }
     }
     }
  }
+
+ printf("\nSo we'll choose : Item1,Item2,Item3,Item%d,Item%d", choose1 , choose2);
 }
+

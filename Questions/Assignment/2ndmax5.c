@@ -1,33 +1,47 @@
-#include<stdio.h>
+#include <stdio.h>
 
-int max(int,int);
 
-void main()
-{
-    int a,b,c,d;
+int findSecondLargest(int a, int b, int c, int d) {
+    
+    if (b > a) {
+        int temp = a;
+        a = b;
+        b = temp;
+    }
+    if (c > a) {
+        int temp = a;
+        a = c;
+        c = temp;
+    }
+    if (d > a) {
+        int temp = a;
+        a = d;
+        d = temp;
+    }
 
-    printf("Enter four numbers:\n");
-    scanf("%d%d%d%d",&a,&b,&c,&d);
+    
+    int secondLargest = b;
+    if (c > secondLargest) {
+        secondLargest = c;
+    }
+    if (d > secondLargest) {
+        secondLargest = d;
+    }
 
-   int Max = max(d,max(c,max(a,b)));
-
-   int secondLar = a;
-
-   if( b > secondLar && b < Max )
-   secondLar =  b;
-   if(c > secondLar && c < Max)
-   secondLar = c;
-   if(d > secondLar && d < Max)
-   secondLar = d;
-
-printf("Second largest number is %d", secondLar);
-
-  
+    return secondLargest;
 }
 
-int max(int a,int b){
-    if(a>b)
-    return a;
-    else
-    return b;
+void main() {
+    int a, b, c, d;
+
+    printf("Enter the four number : ");
+    scanf("%d %d %d %d", &a, &b,&c , &d);
+
+   
+
+    int result = findSecondLargest(a, b, c, d);
+
+    printf("Second largest integer: %d\n", result);
+
+    
 }
