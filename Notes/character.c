@@ -1,16 +1,22 @@
 #include<stdio.h>
 
+int facto(int number){
+	int mult=1;
+	if(number == 0 ){
+        return 1;
+    }
+    else
+	for(int i=1 ; i<=number ; i++ ){
+		mult *= i;
+	}
+
+    return mult;
+}
+
 void main()
 {
-    char a,b;
-//Taking input from different form
-printf("Enter a:");
-scanf("%c",&a);
-
-printf("Enter b:");
-b=getchar();
-
-printf("\na=%c",a);
-putchar(b);
-
+    int n;
+    printf("Enter the number:");
+    scanf("%d", &n);
+    printf("\nFactorial of %d = %d ",n , facto(n));
 }
