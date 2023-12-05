@@ -1,5 +1,11 @@
     #include<stdio.h>
 #include<math.h>
+
+int Floor(double x){
+    for(int i=0 ; i<=x ; i++){
+
+    }
+}
     void main()
     {
         float n;
