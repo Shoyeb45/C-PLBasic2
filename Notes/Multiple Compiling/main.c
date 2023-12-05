@@ -7,6 +7,6 @@ void main()
     printf("Enter two numbers:");
     scanf("%d %d",&a,&b);
 
-    printf("\nAddition %d and Multiplication:",add(a,b), mult(a,b));
+    printf("\nAddition:%d \nMultiplication:%d",add(a,b), mult(a,b));
   
 }
