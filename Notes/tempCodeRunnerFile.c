@@ -1,9 +1,6 @@
-#include<stdio.h>
-
-void main()
-{
-    int x=1;
-
-    printf("%d %d",x++,++x);
-    printf("\n%d",x++);
+int min(int a, int b){
+    if(a<=b)
+    return a;
+    else
+    return b;
 }

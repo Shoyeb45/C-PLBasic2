@@ -7,8 +7,8 @@ void assign(int a[], int b[], int len1, int len2){
 }
 int main()
 {
-        int A[5]={1, 2, 0, 5, 6};
-        int B[5]={2, 0, 5, 4, -1};
+        int A[5]={1, 2, 9, 5, 6};
+        int B[5]={2, 0, 5, 9, -1};
 int Union[10]={0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
         assign(A, Union, 5, 0);
         assign(B, Union, 5, 5);
