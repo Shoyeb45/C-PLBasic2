@@ -20,5 +20,5 @@ void main()
     for(int i=3, j=0; i>=0 ; i--,j++){
         Decimal = Decimal +a[i]*expo(2,j);
     }
-    printf("Decimal number is: %lf",Decimal);
+    printf("Decimal number is: %.0lf",Decimal);
 }
