@@ -19,10 +19,11 @@ int temp;
         for(int j=i+1 ; j<n ; j++){
             if(a[i]>a[j]){
 smallest =j;
-            }
 temp=a[smallest];
 a[smallest]=a[i];
 a[i]=temp;
+            }
+
         }
     }
 
